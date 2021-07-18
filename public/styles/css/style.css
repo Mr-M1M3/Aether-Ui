@@ -1,0 +1,145 @@
+:root {
+  --light-pink: #f37172;
+  --white: #fdfdfd;
+  --dark-gray: #252c32;
+}
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box !important;
+  font-family: "Montserrat", sans-serif;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+html {
+  height: auto;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+body {
+  padding: 0.5rem;
+}
+nav.visible-nav {
+  display: grid;
+  grid-template-columns: 0.25fr 1fr;
+  gap: 1rem;
+  justify-content: center;
+  align-content: center;
+  padding: 0.5rem 2rem;
+}
+div.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ul.nav-links-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style-type: none;
+}
+li.nav-link-container {
+  margin: 0 0.25rem;
+  padding: 0.5rem 1rem;
+}
+a.nav-link {
+  padding: 0.35rem 0.55rem;
+  text-decoration: none;
+  font-size: 0.9rem;
+  border-radius: 0.25rem;
+}
+li.nav-link-container:nth-child(1) a {
+  color: var(--white);
+  font-weight: 600;
+  background-color: var(--light-pink);
+}
+li.nav-link-container:nth-child(2) a {
+  color: var(--dark-gray);
+  border: 1px solid #dde2e4;
+}
+/* Creates Hamburger Menu */
+
+.hamburger::before {
+  content: "";
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--light-pink);
+}
+
+.hamburger {
+  height: 25px;
+  width: 25px;
+  position: relative;
+  padding: 0.6rem;
+  cursor: pointer;
+}
+.hamburger::after {
+  content: "";
+  height: 3px;
+  width: 40%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: var(--light-pink);
+}
+
+.hamburger span:first-child {
+  position: absolute;
+  top: 30%;
+  right: 0;
+  transform: translate(0, -30%);
+  width: 80%;
+  height: 3px;
+  background-color: var(--light-pink);
+}
+
+.hamburger span:last-child {
+  position: absolute;
+  bottom: 30%;
+  right: 0;
+  transform: translate(0, -30%);
+  width: 60%;
+  height: 3px;
+  background-color: var(--light-pink);
+}
+div.nav-toggler-container{
+    padding: 0.5rem;
+    border: 1px solid var(--light-pink);
+    border-radius: 50%;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    display: none;
+}
+button.nav-toggler{
+    background-color: transparent;
+    border: none;
+}
+
+@media screen and (max-width: 654px) {
+  li.nav-link-container:nth-child(1),
+  li.nav-link-container:nth-child(2) {
+    display: none;
+  }
+}
+@media screen and (max-width: 524px) {
+  nav.visible-nav {
+    padding: 0.25rem 0;
+    grid-template-columns: 1fr 0.25fr;
+  }
+  li.hamburger{
+      display: none;
+  }
+  div.nav-toggler-container{
+      display: block;
+  }
+}
