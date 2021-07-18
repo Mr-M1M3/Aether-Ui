@@ -160,8 +160,8 @@ button.nav-toggler {
     display: none;
   }
   .hamburger{
-    height: 5px;
-    width: 5px;
+    height: 15px;
+    width: 15px;
   }
   .hamburger span:last-child{
     bottom: 23.53%;
