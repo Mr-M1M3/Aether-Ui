@@ -159,11 +159,11 @@ button.nav-toggler {
   li.hamburger {
     display: none;
   }
-  .hamburger{
+  button.hamburger{
     height: 15px;
     width: 15px;
   }
-  .hamburger span:last-child{
+  button.hamburger span:last-child{
     bottom: 23.53%;
     right: 0;
     transform: translate(0, -23.53%);
