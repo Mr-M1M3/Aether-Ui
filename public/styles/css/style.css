@@ -127,8 +127,8 @@ li.nav-link-container:nth-child(2) a {
 
 div.nav-toggler-container {
   padding: 0.5rem;
-  border: 1px solid var(--light-pink);
-  border-radius: 50%;
+  /* border: 1px solid var(--light-pink);
+  border-radius: 50%; */
   position: fixed;
   bottom: 50px;
   right: 50px;
