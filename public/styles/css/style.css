@@ -85,13 +85,14 @@ li.nav-link-container:nth-child(2) a {
   top: 0;
   right: 0;
   background-color: var(--light-pink);
+  border-radius: 1rem;
 }
 
 .hamburger {
   height: 25px;
   width: 25px;
   position: relative;
-  padding: 0.6rem;
+  padding: 1rem;
   cursor: pointer;
 }
 
@@ -103,26 +104,18 @@ li.nav-link-container:nth-child(2) a {
   bottom: 0;
   right: 0;
   background-color: var(--light-pink);
+  border-radius: 1rem;
 }
 
 .hamburger span:first-child {
   position: absolute;
-  top: 30%;
+  top: 50%;
   right: 0;
-  transform: translate(0, -30%);
-  width: 80%;
+  transform: translate(0, -50%);
+  width: 70%;
   height: 3px;
   background-color: var(--light-pink);
-}
-
-.hamburger span:last-child {
-  position: absolute;
-  bottom: 30%;
-  right: 0;
-  transform: translate(0, -30%);
-  width: 60%;
-  height: 3px;
-  background-color: var(--light-pink);
+  border-radius: 1rem;
 }
 button.nav-toggler::before{
   content: "";
@@ -132,6 +125,7 @@ button.nav-toggler::before{
   top: 0;
   right: 0;
   background-color: var(--light-pink);
+  border-radius: 1rem;
   /* background-color: var(--white); */
 }
 button.nav-toggler{
@@ -149,6 +143,7 @@ button.nav-toggler span{
   height: 3px;
   width: 70%;
   background-color: var(--light-pink);
+  border-radius: 1rem;
 }
 button.nav-toggler::after{
   content: "";
@@ -158,6 +153,7 @@ button.nav-toggler::after{
   bottom: 0;
   right: 0;
   background-color: var(--light-pink);
+  border-radius: 1rem;
   /* background-color: var(--white); */
 }
 
